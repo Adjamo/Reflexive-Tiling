@@ -1,3 +1,4 @@
+import time
 history = []
 state = False
 
@@ -20,13 +21,13 @@ def is_repeating(hist):
 
 
 while True:
-
+    #time.sleep(0.5)
     # anti-loop rule: detect repetition and flip
     state = is_repeating(history + [state])
     
     history.append(state)
 
-    print(state)
- 
-   
-#print(history)
+    if state == True:
+        print("█",end="")
+    else:
+        print(".",end="")
