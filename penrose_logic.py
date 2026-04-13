@@ -1,5 +1,5 @@
 history = []
-state = True
+state = False
 
 def is_repeating(hist):
     n = len(hist)
@@ -10,7 +10,7 @@ def is_repeating(hist):
 
     # check for symmetry
     if left == right:
-        print("pattern!")
+        #print("pattern!")
         return not state
 
     # recursive check
@@ -19,7 +19,7 @@ def is_repeating(hist):
     return False # if all else fails its false
 
 
-while True
+while True:
 
     # anti-loop rule: detect repetition and flip
     state = is_repeating(history + [state])
@@ -30,4 +30,3 @@ while True
  
    
 #print(history)
-
