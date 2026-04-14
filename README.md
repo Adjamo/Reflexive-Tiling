@@ -1,4 +1,4 @@
-This sentence resolves to true, but if a pattern of true or false appears (by checking if there is a repetition from the first half to the second half, then the first half of the second half and the second half of the second half and so on) the resolution flips, otherwise its false.
+This sentence resolves to true, but if a pattern of true or false appears (by checking if there is a repetition from the first half to the second half, then the first half of the second half and the second half of the second half and so on, down to two true falses) the resolution flips, otherwise it resolves to false.
 
 The code visualises this sentence, looks like a 0 dimensional cellular automata! :)
 
