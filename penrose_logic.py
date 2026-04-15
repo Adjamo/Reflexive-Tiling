@@ -1,6 +1,6 @@
 import time
 history = []
-state = False
+state = True
 
 def is_repeating(hist):
     n = len(hist)
@@ -12,7 +12,7 @@ def is_repeating(hist):
     # check for symmetry
     if left == right:
         #print("pattern!")
-        return not state
+        return True
 
     # recursive check
     if len(right) > 2:
@@ -21,7 +21,7 @@ def is_repeating(hist):
 
 
 while True:
-    #time.sleep(0.5)
+    #time.sleep(0.1)
     # anti-loop rule: detect repetition and flip
     state = is_repeating(history + [state])
     
@@ -30,4 +30,4 @@ while True:
     if state == True:
         print("█",end="")
     else:
-        print(".",end="")
+        print(" ",end="")
