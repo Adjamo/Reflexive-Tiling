@@ -1,4 +1,6 @@
-This sentence resolves to true, but if a pattern of true or false appears (by checking if there is a repetition from the first half to the second half, then the first half of the second half and the second half of the second half and so on, down to two true falses) the resolution flips, otherwise it resolves to false.
+This sentence is True, but if a pattern of True or False appears the truth of this sentence is False.
+
+A pattern is defined here as the equality of the first half of the history of True False, to the second half, then the first half of the second half, to the second half of the second half and so on, right side only, until an atomic unit of two (i.e. True True) is reached. 
 
 The code visualises this sentence, looks like a 1 dimensional cellular automata! :)
 
