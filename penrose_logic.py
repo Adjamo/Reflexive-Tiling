@@ -19,7 +19,7 @@ def is_repeating(hist):
         return is_repeating(right)
     return False # if all else fails its false
 
-
+x = 0
 while True:
     #time.sleep(0.1)
     # anti-loop rule: detect repetition and flip
@@ -31,3 +31,6 @@ while True:
         print("█",end="")
     else:
         print(" ",end="")
+    x += 1
+    if x % 79 == 0:
+        print()
